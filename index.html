@@ -8,19 +8,27 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<div>
-			<img src="./assets/Logo.png" alt="imagen-logo" />
-			<div>
+		<main>
+			<img src="./assets/Logo.png" alt="imagen-logo" class="logo" />
+			<section class="input-section">
 				<textarea id="inputText" placeholder="Ingrese el texto aqui..."></textarea>
-				<div>
-					<button onclick="">Encriptar</button>
-					<button onclick="">Desencriptar</button>
+				<div class="note-container">
+					<img src="./assets/bi_exclamation-circle-fill.svg" alt="icono-advertencia" />
+					<p class="note">Solo letras minúsculas y sin acentos</p>
 				</div>
-			</div>
-		</div>
-		<div>
-			<h2>Output</h2>
-			<textarea id="outputText" readonly></textarea>
-		</div>
+			</section>
+			<section class="buttons-section">
+				<button onclick="" class="button-blue">Encriptar</button>
+				<button onclick="">Desencriptar</button>
+			</section>
+			<section class="output-section">
+				<div class="no-result-text">
+					<h2>Ningun mensaje fue encontrado</h2>
+					<p>Ingresa el texto que desees encriptar o desencriptar.</p>
+				</div>
+				<textarea id="outputText" readonly></textarea>
+				<button onclick="" class="button-white">Copiar</button>
+			</section>
+		</main>
 	</body>
 </html>

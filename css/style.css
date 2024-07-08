@@ -1,0 +1,170 @@
+:root {
+	font-size: 10px; /* 1rem = 10px */
+
+	/* Dark blue shades */
+	--dark-blue-100: #609ed4;
+	--dark-blue-200: #356ea9;
+	--dark-blue-300: #0a3871;
+	--dark-blue-400: #072b61;
+	--dark-blue-500: #052051;
+
+	/* Light blue shades */
+	--light-blue-100: #f3f5fc;
+	--light-blue-200: #eff1fa;
+	--light-blue-300: #e9ecf8;
+	--light-blue-400: #aab2d5;
+	--light-blue-500: #757fb2;
+
+	/* Gray shades */
+	--gray-100: #ced4da;
+	--gray-200: #adb5bd;
+	--gray-300: #868e96;
+	--gray-400: #495057;
+	--gray-500: #343a40;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	background-color: var(--light-blue-300);
+	width: 100%;
+	height: 100vh;
+	font-size: 1.6rem;
+	padding: 1rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.logo {
+	align-self: flex-start;
+}
+
+textarea {
+	padding: 1rem;
+	border: 0.1rem;
+	border-radius: 0.5rem;
+	background-color: var(--light-blue-300);
+
+	font-family: Arial, sans-serif;
+	font-size: 2.6rem;
+}
+
+button {
+	padding: 2rem;
+	background-color: var(--light-blue-300);
+	color: var(--dark-blue-300);
+	border: 0.1rem solid var(--dark-blue-300);
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--gray-100);
+}
+
+.button-blue {
+	background-color: var(--dark-blue-300);
+	color: var(--light-blue-300);
+}
+
+.button-blue:hover {
+	background-color: var(--dark-blue-500);
+}
+
+.button-white {
+  background-color: white;
+}
+
+/* Seccion de input */
+
+.input-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.input-section textarea {
+	height: 20rem;
+	padding: 1rem;
+	border: 0.1rem;
+	border-radius: 0.5rem;
+	color: var(--dark-blue-300);
+}
+
+textarea::-webkit-input-placeholder {
+	color: var(--dark-blue-300);
+}
+
+textarea:-moz-placeholder {
+	/* Firefox 18- */
+	color: var(--dark-blue-300);
+}
+
+textarea::-moz-placeholder {
+	/* Firefox 19+ */
+	color: var(--dark-blue-300);
+}
+
+textarea:-ms-input-placeholder {
+	color: var(--dark-blue-300);
+}
+
+.note-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.note {
+	font-size: 0.9em;
+	color: #555;
+}
+
+/* Seccion botones */
+.buttons-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+/* Seccion de output */
+
+.output-section {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	gap: 1rem;
+	padding: 2rem;
+	border-radius: 1rem;
+	border: none;
+}
+
+.output-section textarea {
+	height: 20rem;
+	padding: 1rem;
+	border: 0.1rem;
+	border-radius: 1rem;
+}
+
+.output-section textarea {
+	resize: none;
+	padding: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: white;
+}
+
+.no-result-text {
+	text-align: center;
+}
