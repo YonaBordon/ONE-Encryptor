@@ -18,17 +18,19 @@
 				</div>
 			</section>
 			<section class="buttons-section">
-				<button onclick="" class="button-blue">Encriptar</button>
-				<button onclick="">Desencriptar</button>
+				<button id="encryptButton" class="button-blue">Encriptar</button>
+				<button id="decryptButton">Desencriptar</button>
 			</section>
 			<section class="output-section">
-				<div class="no-result-text">
-					<h2>Ningun mensaje fue encontrado</h2>
+				<div id="noResultText" class="no-result-text">
+					<h2>Ningún mensaje fue encontrado</h2>
 					<p>Ingresa el texto que desees encriptar o desencriptar.</p>
 				</div>
 				<textarea id="outputText" readonly></textarea>
-				<button onclick="" class="button-white">Copiar</button>
+				<button id="copyButton" class="button-white">Copiar</button>
 			</section>
 		</main>
+
+		<script src="./javascript/script.js"></script>
 	</body>
 </html>

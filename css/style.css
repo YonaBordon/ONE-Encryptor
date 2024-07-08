@@ -167,4 +167,11 @@ textarea:-ms-input-placeholder {
 
 .no-result-text {
 	text-align: center;
+  min-height: 18rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
