@@ -37,7 +37,7 @@ body {
 	width: 100%;
 	height: 100vh;
 	font-size: 1.6rem;
-	padding: 1rem;
+	padding: 4rem;
 }
 
 main {
@@ -67,6 +67,8 @@ button {
 	border: 0.1rem solid var(--dark-blue-300);
 	border-radius: 1rem;
 	cursor: pointer;
+
+  width: 100%;
 }
 
 button:hover {
@@ -83,7 +85,7 @@ button:hover {
 }
 
 .button-white {
-  background-color: white;
+	background-color: white;
 }
 
 /* Seccion de input */
@@ -92,6 +94,7 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	width: 100%;
 }
 
 .input-section textarea {
@@ -143,11 +146,16 @@ textarea:-ms-input-placeholder {
 .output-section {
 	display: flex;
 	flex-direction: column;
-	background-color: white;
+	align-items: center;
+	justify-content: center;
 	gap: 1rem;
+	width: 100%;
+
+	background-color: white;
 	padding: 2rem;
 	border-radius: 1rem;
-	border: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	
 }
 
 .output-section textarea {
@@ -165,13 +173,75 @@ textarea:-ms-input-placeholder {
 	background-color: white;
 }
 
+.no-result-text img {
+	display: none;
+}
+
 .no-result-text {
 	text-align: center;
-  min-height: 18rem;
-  gap: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
+	min-height: 18rem;
+	gap: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+	main {
+		width: 90%;
+	}
+
+  textarea {
+    width: 100%;
+  }
+
+	.input-section {
+		height: 50%;
+	}
+
+	.input-section textarea {
+		flex-grow: 1;
+	}
+
+	.output-section {
+		height: 50%;
+	}
+
+	.output-section textarea {
+		flex-grow: 1;
+	}
+
+	.buttons-section {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.buttons-section button {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1024px) {
+	main {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+	}
+
+	.input-section {
+		width: 70%;
+		height: 100%;
+	}
+
+	.output-section {
+		width: 30%;
+		height: 100%;
+		margin: rem;
+}
+
+	.no-result-text img {
+		display: block;
+	}
 }

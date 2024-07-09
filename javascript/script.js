@@ -57,6 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
+	inputText.addEventListener('input', () => {
+		if (inputText.value === '') {
+			noResultText.style.display = 'block';
+			outputText.style.display = 'none';
+			copyButton.style.display = 'none';
+		}
+	});
+
 	function toggleOutputVisibility() {
 		if (outputText.value) {
 			outputText.style.display = 'block';
