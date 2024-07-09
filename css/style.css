@@ -32,12 +32,18 @@
 body {
 	font-family: Arial, sans-serif;
 	display: flex;
+  flex-direction: column;
+  align-items: center;
 	justify-content: center;
 	background-color: var(--light-blue-300);
 	width: 100%;
 	height: 100vh;
 	font-size: 1.6rem;
 	padding: 4rem;
+}
+
+header {
+  align-self: flex-start;
 }
 
 main {

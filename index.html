@@ -8,9 +8,11 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
+		<header>
+			<img src="./assets/Logo.png" alt="imagen-logo" class="logo" />
+		</header>
 		<main>
 			<section class="input-section">
-				<img src="./assets/Logo.png" alt="imagen-logo" class="logo" />
 				<textarea id="inputText" placeholder="Ingrese el texto aqui..."></textarea>
 				<div class="note-container">
 					<img src="./assets/bi_exclamation-circle-fill.svg" alt="icono-advertencia" />
@@ -19,11 +21,11 @@
 				<div class="buttons-section">
 					<button id="encryptButton" class="button-blue">Encriptar</button>
 					<button id="decryptButton">Desencriptar</button>
-				</d>
+				</div>
 			</section>
 			<section class="output-section">
 				<div id="noResultText" class="no-result-text">
-          <img src="./assets/Muneco.png" alt="imagen-muneco" />
+					<img src="./assets/Muneco.png" alt="imagen-muneco" />
 					<h2>Ningún mensaje fue encontrado</h2>
 					<p>Ingresa el texto que desees encriptar o desencriptar.</p>
 				</div>
@@ -31,7 +33,6 @@
 				<button id="copyButton" class="button-white">Copiar</button>
 			</section>
 		</main>
-
 		<script src="./javascript/script.js"></script>
 	</body>
 </html>
